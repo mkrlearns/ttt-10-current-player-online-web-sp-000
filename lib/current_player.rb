@@ -1,3 +1,8 @@
 def turn_count(board)
-  board.each do |board| puts "Stop hitting yourself #{brother}!"}
+  turns = 0
+  board.each do |board|
+    if board == "X" || board == "O"
+      turns += 1
+  end
+  return turns
 end
